@@ -1,0 +1,252 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1473300400129443485
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6665273480458296255}
+  - component: {fileID: 1210617896873822970}
+  m_Layer: 0
+  m_Name: Char Stat 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6665273480458296255
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1473300400129443485}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7235708226953845234}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1210617896873822970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1473300400129443485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d2955b9f0cb8ce4ab64b6426a08ea56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  charName: Flower
+  playerLevel: 3
+  currentEXP: 250
+  expToNextLevel: 000000000000000000000000
+  maxLevel: 100
+  baseExp: 1000
+  mpBonus: 01000000000000000000000002000000000000000c00000000000000120000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  currentHP: 300
+  maxHP: 300
+  currentMP: 0
+  maxMP: 0
+  strength: 22
+  defence: 2
+  wpPwr: 0
+  armrPwr: 0
+  equippedWp: 
+  equippedArmr: 
+  charImage: {fileID: 21300000, guid: e0ddba6d3fcf21f49949fcc95c849aac, type: 3}
+  charTalk: frafrafra!
+--- !u!1 &2213285731865556374
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7235708226953845234}
+  - component: {fileID: 7113832443385038062}
+  - component: {fileID: 3728132407278101191}
+  m_Layer: 0
+  m_Name: Game Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7235708226953845234
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2213285731865556374}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 7826251450657561896}
+  - {fileID: 6665273480458296255}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7113832443385038062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2213285731865556374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 734fa52ba12d99042a4ff4fd67983815, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameMenuOpen: 0
+  dialogActive: 0
+  fadingBetweenAreas: 0
+  shopActive: 0
+  battleActive: 0
+  playerStats:
+  - {fileID: 7826251450657561897}
+  - {fileID: 1210617896873822970}
+  itemHeld:
+  - 
+  - 
+  - 
+  - Health potion
+  - 
+  - 
+  - 
+  - Iron Armor
+  - 
+  - 
+  - 
+  - Mp potion
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - Leather Armor
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - Wood Sword
+  - 
+  - 
+  - 
+  - 
+  - 'Iron Sword '
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  numOfItems: 00000000000000000000000003000000000000000000000000000000010000000000000000000000000000000500000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000140000000000000000000000000000000000000000000000000000000000000000000000
+  referenceItem:
+  - {fileID: 3488897417396442344, guid: 7090de0ba4bf5644b9b7b79668c30ac5, type: 3}
+  - {fileID: 5664101653234117998, guid: a78fee1bfb8cb6241a0b82d065326d54, type: 3}
+  - {fileID: 7141244995717995961, guid: fd7e6a227fe7b2b40a09a2e3e1182b27, type: 3}
+  - {fileID: 7906705977590629861, guid: 73292e90580c5bd48ab8bd8599391cd1, type: 3}
+  - {fileID: 7915886359483675477, guid: e83f2e34db4c5284987cc9cec82201fb, type: 3}
+  - {fileID: 8756449869407019621, guid: 9f19a8c90bebca240a47fe4bcfb0b6a3, type: 3}
+  currentGold: 300
+--- !u!114 &3728132407278101191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2213285731865556374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91d62839956c8f146a3979ac0f7acd0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questMarkerNames:
+  - 
+  - quest test
+  - talk with girl
+  - enter the cave
+  - kill dragon
+  - do
+  - something
+  questMarkersComplete: 00000000000000
+--- !u!1 &7826251450657561902
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7826251450657561896}
+  - component: {fileID: 7826251450657561897}
+  m_Layer: 0
+  m_Name: Char Stat 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7826251450657561896
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7826251450657561902}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7235708226953845234}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7826251450657561897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7826251450657561902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d2955b9f0cb8ce4ab64b6426a08ea56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  charName: Yuji
+  playerLevel: 1
+  currentEXP: 250
+  expToNextLevel: 000000000000000000000000
+  maxLevel: 100
+  baseExp: 1000
+  mpBonus: 01000000000000000000000002000000000000000c00000000000000120000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  currentHP: 120
+  maxHP: 120
+  currentMP: 30
+  maxMP: 30
+  strength: 12
+  defence: 4
+  wpPwr: 0
+  armrPwr: 0
+  equippedWp: 
+  equippedArmr: 
+  charImage: {fileID: 7152930139536384079, guid: 8648e3364474a6a4cb42972aaee9e6ef,
+    type: 3}
+  charTalk: smells something burnt....
